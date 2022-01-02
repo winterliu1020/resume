@@ -18,7 +18,7 @@
                       的流量控制和拥塞控制</li><li>掌握数字签名原理、了解<strong>https 的安全机制</strong>的工作原理</li></ul></div></div></div></section></div><div class="content-right"><section class="practice"><header class="section-hd"><span class="section-title-l"></span><h2 class="section-title">项目简介</h2><span class="section-title-r"></span></header><div class="section-bd"><div class="item"><header class="item-hd"><h2 class="item-name"><a href="https://github.com/winterliu1020/MyRpcDemo">MyRpcDemo</a></h2><a class="btn item-more">开源项目</a></header><div class="item-bd"><div>一款基于 Nacos 实现的 RPC 框架。网络传输实现了基于 Java 原生
                     Socket 与 Netty
                     版本，并且实现了多种序列化与负载均衡算法，系统手写代码 2.2k
-                    余行。</div><ul class="section-content"><li>技术栈：Netty + Nacos</li><li>实现了基于 Java 原生 Socket 传输与 Netty 传输<strong>两种网络传输方式</strong></li><li>实现了<strong>四种序列化算法</strong>，Json 方式、Kryo
+                    余行。</div><ul class="section-content"><li>技术栈：Netty + Nacos</li><li>实现了基于 Java 原生 Socket 传输与 Netty 传输<strong>两种网络传输方式</strong></li><li>实现了<strong>两种序列化算法</strong>，Json 方式、Kryo
                       算法（默认采用
                       Kryo方式序列化）</li><li>实现了<strong>两种负载均衡算法</strong>：随机算法与轮转算法</li><li>使用 Nacos
                       作为<strong>注册中心</strong>，管理服务提供者信息</li><li>消费端如采用 Netty 方式，会<strong>复用 Channel</strong>避免多次连接</li><li>如消费端和提供者都采用 Netty 方式，会采用 Netty
